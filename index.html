@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body> 
+  <div class="loading"><span class="loader  z-3"></span></div>
+  <div class="container">
+    <div class="form-control border-0">
+      <label for="search" class="form-label"></label>
+      <input
+        type="search"
+        id="search"
+        class="w-100 border-2 form-floating form-control mt-5 rounded-5"
+        placeholder="Search"
+      />
+    </div>
+  </div>
+  <div class="container my-5 border-5 p-5">
+    <table class="table table-dark table-striped table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Total Transaction Amount</th>
+          <th scope="col">Transaction per day</th>
+        </tr>
+      </thead>
+      <tbody id="customer-table">
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container my-5 ">
+    <canvas id="transaction-graph" width="400" height="200"></canvas>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
